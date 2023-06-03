@@ -1,0 +1,17 @@
+{
+  "name": "prisma_docker",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "generate": "DEBUG='*' prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.15.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.15.0"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  }
+}

@@ -1,0 +1,16 @@
+services:
+  prisma_db:
+    image: mysql:5.7.42
+    environment:
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+    ports:
+      - '3306'
+  prisma_generate:
+    image: prisma_docker:latest
+    build:
+      context: .
+      dockerfile: Dockerfile

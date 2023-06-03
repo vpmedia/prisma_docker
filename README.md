@@ -1,2 +1,4 @@
 # prisma_docker
-Prisma Docker Segfault Debug
+
+docker compose up --build
+
